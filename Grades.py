@@ -1,3 +1,7 @@
+
+
 def total(values):
-    values = 35
-    
+    sum = 0
+    for i in values:
+        sum += i
+    return sum
