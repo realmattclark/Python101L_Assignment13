@@ -14,6 +14,15 @@ class Grade_Test(unittest.TestCase):
     def test_average_one(self):
         result = Grades.total([])
         self.assertAlmostEqual(.1 + .2 + .3, 3)
-        
+    
+    def test_average_two(self):
+        result = Grades.total([])
+        self.assertAlmostEqual(2, 15, 22, 9)
+
+    def test_average_returns_nan(self):
+        result = Grades.total([])
+        self.assertNotAlmostEqual([])
+        return math.nan
+
 
 unittest.main()
